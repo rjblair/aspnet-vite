@@ -12,6 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.1.0",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "jquery-validation": "^1.21.0",
+    "jquery-validation-unobtrusive": "^4.0.0",
+    "lit": "^3.2.0",
     "sass": "^1.77.8",
     "typescript": "^5.5.4",
     "vite": "^5.3.5"

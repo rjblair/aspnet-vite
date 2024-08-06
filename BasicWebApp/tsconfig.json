@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": false,
     "lib": [ "ES2020", "DOM", "DOM.Iterable" ],
     "module": "ESNext",
     "skipLibCheck": true,
@@ -19,8 +19,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
 
+    "experimentalDecorators": true
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
