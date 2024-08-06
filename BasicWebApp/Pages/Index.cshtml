@@ -4,18 +4,24 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p id="showMe"></p>
-</div>
+@* <div class="text-center"> *@
+    <div>
+        <a href="https://vitejs.dev" target="_blank">
+            <img src="~/vite.svg" class="logo" alt="Vite logo" />
+        </a>
+        <a href="https://dotnet.microsoft.com/" target="_blank">
+            <img src="~/dotnet.svg" class="logo" alt="Dotnet logo" />
+        </a>
+        <a href="https://www.typescriptlang.org/" target="_blank">
+            <img src="~/typescript.svg" class="logo vanilla" alt="TypeScript logo" />
+        </a>
+        <h1>Vite + ASP.NET + TypeScript</h1>
+        <div class="card">
+            <button class="sbutton" id="counter" type="button"></button>
+        </div>
+        <p class="read-the-docs">
+            Click on the Vite, ASP.NET and TypeScript logos to learn more
+        </p>
+    </div>
+@* </div> *@
 
-@section Scripts {
-   <script>
-       $(document).ready(function () {
-           //console.log(showMe.show());
-           //$('#showMe').html(showMe.show());
-           showMe.init();
-       });
-   </script>
-}

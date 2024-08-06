@@ -1,7 +1,14 @@
+using Vite.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddViteServices(options =>
+{
+    options.Server.Https = true;
+    options.Server.AutoRun = true;
+});
 
 var app = builder.Build();
 
@@ -21,5 +28,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapControllers();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseViteDevelopmentServer(true);
+}
 
 app.Run();
