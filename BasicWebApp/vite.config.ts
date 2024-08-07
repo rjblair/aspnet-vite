@@ -2,7 +2,7 @@
  * Name: vite.config.ts
  * Description: Vite configuration file
  */
-
+import inject from '@rollup/plugin-inject';
 import { UserConfig, defineConfig } from 'vite';
 import { spawn } from 'child_process';
 import fs from 'fs';
@@ -62,6 +62,7 @@ export default defineConfig(async () => {
             outDir: '../wwwroot',
             assetsDir: '',
             rollupOptions: {
+                
                 input: 'ts/main.ts',
                 output: {
                     // Save entry files to the appropriate folder
