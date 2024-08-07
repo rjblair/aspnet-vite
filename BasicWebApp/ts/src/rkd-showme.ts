@@ -1,15 +1,4 @@
-﻿//import * as jQuery from 'jquery';
-//declare global {
-//    interface Window {
-//        jQuery: typeof jQuery;
-//        $: typeof jQuery;
-//    }
-//}
-
-//window.$ = window.jQuery
-//window.jQuery = window.jQuery
-
-class showMe {
+﻿class showMe {
     static message = 'Hello from JavaScript';
 
     static show() {
@@ -23,7 +12,7 @@ class showMe {
     }
 }
 
-jQuery(document).ready(function () {
+$(document).ready(function () {
     //console.log(showMe.show());
     //$('#showMe').html(showMe.show());
     showMe.init();

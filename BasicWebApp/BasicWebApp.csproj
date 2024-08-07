@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="ts\src\rkd-showme.ts" />
+    <None Remove="ts\src\_jquery.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ts\src\rkd-showme.ts" />
+    <TypeScriptCompile Include="ts\src\_jquery.ts" />
   </ItemGroup>
 
   <!-- Ensure Node environment on Build -->
